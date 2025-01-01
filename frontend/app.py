@@ -12,15 +12,12 @@ Credit card fraud is a form of identity theft that involves an unauthorized taki
 
 **This Streamlit App utilizes a Machine Learning API in order to detect fraudulent credit card  based on the following criteria: hours, type of transaction, amount, balance before and after transaction etc.** 
 
-The notebook, model and documentation(Dockerfiles, FastAPI script, Streamlit App script) are available on [GitHub.](https://github.com/Nneji123/Credit-Card-Fraud-Detection)        
+The notebook, model and documentation(Dockerfiles, FastAPI script, Streamlit App script) are available     
 
-**Made by Group 3 Zummit Africa AI/ML Team**
+*
 
 **Contributors:** 
-- **Hilary Ifezue(Group Lead)**
-- **Nneji Ifeanyi**
-- **Somtochukwu Ogechi**
-- **ThankGod Omieje**
+- **Harsh Gadhavi**
 """)
 
 
@@ -49,7 +46,7 @@ if types == 3:
 if types == 4:
     x =  'Transfer'
     
-amount = st.sidebar.number_input("Amount in $",min_value=0, max_value=110000)
+amount = st.sidebar.number_input("Amount in Rupees",min_value=0, max_value=110000)
 oldbalanceorg = st.sidebar.number_input("""Original Balance Before Transaction was made""",min_value=0, max_value=110000)
 newbalanceorg= st.sidebar.number_input("""New Balance After Transaction was made""",min_value=0, max_value=110000)
 oldbalancedest= st.sidebar.number_input("""Old Balance""",min_value=0, max_value=110000)
